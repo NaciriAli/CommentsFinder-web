@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: ZillaSlab;
+    src: url(../fonts/ZillaSlab-Regular.ttf);
+}
+body{
+    background-color: #DBECF4;
+    margin: 0px;
+    padding: 0px;
+}
+#section1{
+	height:101px;
+    background-color:#194569;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+nav a{
+    background-color: #194569;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 42px;
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    border: 1px solid #DBECF4;
+    border-radius: 1px;
+    color:#DBECF4;
+    transition: all ease 0.3s;
+}
+nav a:nth-child(1){
+    position:absolute;
+    right:488px;
+    top:30px;
+}
+nav a:nth-child(2){
+    position:absolute;
+    right:284px;
+    top:30px;
+}
+nav a:nth-child(3){
+    position:absolute;
+    right:80px;
+    top:30px;
+}
+nav a:hover{
+    background-color: #DBECF4;
+    transition: all ease-in 0.4s;
+    color:#194569;
+    border-radius: 20px 0px 0px;
+}

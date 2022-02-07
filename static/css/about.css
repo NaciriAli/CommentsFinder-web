@@ -1,0 +1,34 @@
+h3{
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #194569;
+}
+p{
+    font-size: 14pt;
+    font-family: ZillaSlab,Ubuntu,Arial, Helvetica, sans-serif;
+}
+.step{
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #194569;
+    margin: 6px 0px 6px 4px;
+}
+#notice{
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #194569;
+    text-indent: 5px;
+    position: absolute;
+    top: 90%;
+}
+h5{
+    font-size: 10pt;
+    font-family: ZillaSlab,Ubuntu,Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top:96%;
+}

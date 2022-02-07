@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2>Welcome to COMMENTS FINDER</h2>
+<h4>Find comments in code sources easily</h4>
+<div id="choosefile">Choose your file:</div><br>
+<input type="file" id="code"/><br>
+
+<select id="choice">
+    <option value="">--Please choose a language!!</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="python">Python</option>
+    <option value="cplusplus">C++</option>
+</select><br>
+<input type="button" value="Search" onclick="comm_search()"/><br>
+<textarea id="res" rows=20 cols=170></textarea>
+<pre id="output"></pre>
+<script>
+    c = ["//","/*"];
+    cplusplus = ["//","/*"];
+    python = ["#",'"""'];
+    html = ["<!--","<comment>"];
+    css = ["/*"];
+    indexes = "";
+    /*function comm_search(){
+        file = document.getElementById("code").files[0];
+        lang = document.querySelector('#choice').value;
+        var tmp = new FileReader(file);
+        texto = tmp.readAsText();
+        document.getElementById("res").value = texto; */
+        document.getElementById('code')
+			.addEventListener('change', function() {
+			
+			var fr=new FileReader();
+			fr.onload=function(){
+				document.getElementById('output')
+						.value=fr.result;
+			}
+			
+			fr.readAsText(this.files[0]);
+		})
+    function comm_search(){
+        texto = document.getElementById("output").value.split('\n');
+        lang = document.querySelector('#choice').value;
+        switch (lang){
+            case "c": exp = c;break;
+            case "c++": exp = cplusplus;break;
+            case "python": exp = python;break;
+            case "html": exp = html;break;
+            case "css": exp = css;break;
+        }
+        /* for ([index ,elem] of texto.entries()){
+            for (symb in exp){
+                if (elem.includes(symb)){
+                    indexes += index +' - ' + elem + '\n';
+                }
+            }
+        } */
+        for (elem in texto){
+            if (texto[elem].includes(exp[0])){
+                indexes += 'line:'+(parseInt(elem) +1) +'-> '+ texto[elem] + '\n\n';
+            }
+        }
+        document.getElementById("res").value = indexes;
+    }
+</script>
+{% endblock %}

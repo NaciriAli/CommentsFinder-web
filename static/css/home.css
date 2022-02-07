@@ -1,0 +1,82 @@
+h2{
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    border: 1px solid #c8d8e493;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 0px;
+    font-size: 35pt;
+    background-color: #c8d8e493;
+    color: #194569;
+}
+h4{
+    font-family: ZillaSlab,Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 23px;
+    position:relative;
+    left: 336px;
+    top: 0px;
+    color: #194569;
+    width: 600px;
+}
+#choosefile{
+    font-size: 15pt;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #194569;
+    margin: 63px 0px 0px 0px;
+    text-indent: 6px;
+}
+#code{
+    font-size: 15pt;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #194569;
+    margin-bottom:16px;
+}
+#choice{
+    background-color: #DBECF4;
+    font-size: 15pt;
+    font-family: ZillaSlab,Ubuntu,Arial, Helvetica, sans-serif;
+    width: 344px;
+    border: 1px solid #194569;
+    margin-bottom: 10px;
+}
+#choice:hover{
+    cursor: pointer;
+    border: 2px solid #194569;
+}
+input[type="button"]{
+    width: 344px;
+    outline: none;
+    height: auto;
+    background-color: #194569;
+    font-size: 15pt;
+    font-weight: bold;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #DBECF4;
+    cursor: pointer;
+    border: 1px solid #DBECF4;
+    margin-bottom:60px;
+}
+input[type="button"]:hover{
+    transition: all ease-out 0.3s;
+    color: #194569;
+    background-color: #c8d8e493;
+    border-bottom: 1px solid #194569;
+    border-radius: 0 6px 0 0;
+}
+textarea{
+    background-color: #DBECF4;
+    position: absolute;
+    left: 370px;
+    top: 297px;
+    width: 953px;
+    height: 300px;
+    border: 1px solid #c8d8e493;
+    font-size: 12pt;
+    font-family: ZillaSlab,Ubuntu,Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+    resize: none;
+    scrollbar-color: #DBECF4, #194569;
+    
+}
+    
+ 

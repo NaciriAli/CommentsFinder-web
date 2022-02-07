@@ -1,0 +1,23 @@
+h4{
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #194569;
+}
+.contact{
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: Ubuntu,ZillaSlab,Arial, Helvetica, sans-serif;
+    color: #194569;
+    margin-bottom: 8px;
+}
+#me{
+    position: absolute;
+    top: 94%;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: ZillaSlab,Ubuntu,Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+
+}
