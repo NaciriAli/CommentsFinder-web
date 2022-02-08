@@ -1,1 +1,1 @@
-web: gunicorn app:commFind
+web: gunicorn application:commentsFinder
