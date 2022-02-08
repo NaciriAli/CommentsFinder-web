@@ -15,4 +15,4 @@ def contact():
     return render_template("contact.html",title="Contact",custom_css="contact")
 
 if __name__ == "__main__":
-    commentsFinder.run(debug=True)
+    commentsFinder.run(debug=True)  # +port=9000 for localhost
